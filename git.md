@@ -31,4 +31,4 @@ git reset HEAD = unadd the files that you "add" before
 
 git reset <sha1_code> = rollback your project to that commit sha1 register in specific
 
-git diff = show modifications you made in your files comparing to the latest commit
+git diff <file> = show modifications you made in your files comparing to the latest commit
