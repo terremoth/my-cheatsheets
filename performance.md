@@ -32,7 +32,7 @@
 - [ ] NEVER use REACTIVE libs/frameworks if your problem does not requires reactivity to solve. Sometimes reactive code increase 2-10x more the size of your JavaScript code
 - [ ] MEVER use experimental/beta Objects, properties or functions in your JavaScript. If if doubt, search the MDN to see if it is widely accepted by the browsers 
 
-## Architetural Related
+## Architectural Related
 - [ ] Always use frameworks that follows SOLID and that implements design patterns, so you can avoid performance problems like the Banana-Gorilla-Jungle problem and decrease unused things in your server's memory and process less
 - [ ] Before start a project, think and discuss with your team the right architecture to implement. Sometimes MVC and/or Microservices aren't the better to follow. There are plenty of others architecture types
 - [ ] Refactor your code always you can, so can be more testable, avoid duplication and avoid losing lots of programming hours 
