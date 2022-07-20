@@ -30,7 +30,7 @@
 - [ ] Try to always put your \<script\> tags at the end of the \<body\> tag, right before \</body\>
 - [ ] Always put your CSS inside the \<head\> tags 
 - [ ] NEVER use REACTIVE libs/frameworks if your problem does not requires reactivity to solve. Sometimes reactive code increase 2-10x more the size of your JavaScript code
-- [ ] MEVER use experimental/beta Objects, properties or functions in your JavaScript. If if doubt, search the MDN to see if it is widely accepted by the browsers 
+- [ ] NEVER use experimental/beta Objects, properties or functions in your JavaScript. If if doubt, search the MDN to see if it is widely accepted by the browsers 
 
 ## Architectural Related
 - [ ] Always use frameworks that follows SOLID and that implements design patterns, so you can avoid performance problems like the Banana-Gorilla-Jungle problem and decrease unused things in your server's memory and process less
