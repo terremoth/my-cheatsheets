@@ -1,4 +1,4 @@
-# Performance and Tunning Web Applications Cheatsheet
+# Performance and Tuning Web Applications Cheatsheet
 
 ## In your backend
 - [ ] if some information is repeatedly showing in the screen (views) coming from backend from Database, consider adding some cache like Redis or Memcached
@@ -37,3 +37,9 @@
 - [ ] Before start a project, think and discuss with your team the right architecture to implement. Sometimes MVC and/or Microservices aren't the better to follow. There are plenty of others architecture types
 - [ ] Refactor your code always you can, so can be more testable, avoid duplication and avoid losing lots of programming hours 
 - [ ] Aways use Cloudflare (that has a free plan) or some similar group of services that can cache and have a fast DNS around the world to deliver fast requests
+
+---
+### Tips
+
+- [NewRelic](https://newrelic.com/) is one of the best free tools you can use to see where are the performance issues in your web application. Consider installing it in your server if need it. Sometimes this tool is a life-changer.
+- If you use Laravel (PHP), consider adding [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) to your project. It can help you with query issues and slow responses
