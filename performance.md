@@ -8,7 +8,7 @@
 - [ ] If you need to frequently send emails, prefer to outsource it to a company that is specialized in this, like SendGrid
 - [ ] Learn how/why use INDEX on some tables columns (DB), the ones that you do more WHERE's (mainly the ones that are string/varchar variant fields), this will increase SELECT statements response
 - [ ] If you have lots of queries doing "where \`something\` like '%foobar%' consider use Elastic Search, because this kind of query take more and more time the more the table grows
-- [ ] Never store file/blobs in your DB, upload it somewhere else. They make the DB and the tables bigger. Your web server can deliver the files and images absurdly faster than querying
+- [ ] Never store file/blobs in your DB, upload it somewhere else. They make the DB and the tables bigger. Your web server can deliver the files and images absurdly faster than querying. You can descentralize using AWS S3, or Backblaze as external file storages
 - [ ] Learn about BigO Notation and look where your algorithms can be optimized to process faster, like loops inside loops and joins
 - [ ] Query only the necessary columns you going to use, avoid "SELECT * FROM"
 - [ ] Never EVER use MongoDB as first option if you don't know why you're choosing it. Most part of the time you are going to need relational databases
@@ -24,18 +24,18 @@
 ## For frontend
 - [ ] Always code Mobile First
 - [ ] Use Async in your ajax/fetch functions to not break your user experience in the webpage
-- [ ] Do not request your backend always using ajax/fetch every second, you can flood and make an unintentional DDoS
+- [ ] Do not request your backend always using ajax/fetch every second, you can flood and make an unintentional DDoS. Consider using websockets, for an event driven approach
 - [ ] Bundle your assets, always joining, uglifying and minifying CSS and JS files so your code will be drastically smaller, requesting a lot faster to your users
 - [ ] Learn how to use async/defer in your \<script\> tags to it won't break your user experience waiting for load files
 - [ ] Try to always put your \<script\> tags at the end of the \<body\> tag, right before \</body\>
 - [ ] Always put your CSS inside the \<head\> tags 
 - [ ] NEVER use REACTIVE libs/frameworks if your problem does not requires reactivity to solve. Sometimes reactive code increase 2-10x more the size of your JavaScript code
-- [ ] NEVER use experimental/beta Objects, properties or functions in your JavaScript. If if doubt, search the MDN to see if it is widely accepted by the browsers 
+- [ ] NEVER use experimental/beta Objects, properties or functions in your JavaScript. If if doubt, search the MDN to see if it is widely accepted by the browsers. Consider using polyfills, or Babel if you must (with the trade off being a higher bundle size)
 
 ## Architectural Related
 - [ ] Always use frameworks that follows SOLID and that implements design patterns, so you can avoid performance problems like the Banana-Gorilla-Jungle problem and decrease unused things in your server's memory and process less
 - [ ] Before start a project, think and discuss with your team the right architecture to implement. Sometimes MVC and/or Microservices aren't the better to follow. There are plenty of others architecture types
-- [ ] Refactor your code always you can, so can be more testable, avoid duplication and avoid losing lots of programming hours 
+- [ ] Refactor your code always you can, so can be more testable, avoid duplication and avoid losing lots of programming hours. 
 - [ ] Aways use Cloudflare (that has a free plan) or some similar group of services that can cache and have a fast DNS around the world to deliver fast requests
 
 ---
