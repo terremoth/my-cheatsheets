@@ -43,5 +43,5 @@
 
 - [NewRelic](https://newrelic.com/) is one of the best free tools you can use to see where are the performance issues in your web application. Consider installing it in your server if need it. Sometimes this tool is a life-changer.
 - If you use Laravel (PHP), consider adding [Laravel Debugbar](https://github.com/barryvdh/laravel-debugbar) to your project. It can help you with query issues and slow responses
-- AWS have a lot of tools and services that can outsource your problems to their servers to process, log and store, which are already tuded most of the time
+- AWS have a lot of tools and services that can outsource your problems to their servers to process, log and store, which are already tuned most of the time
 - If you read all this guide and paid attention, you could see most of the "optimization" issues can be solved by: caching, queuing, oursourcing and optimizing algorithms. It is purely science, not magic. Using the right service for the right job, using the right tool to solve the right problem.
