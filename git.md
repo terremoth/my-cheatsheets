@@ -1,6 +1,10 @@
 # git
 git clone https://yourrepository.com/repo.git repo_name = downloads the remote project locally
 
+git config user.name \<your github username\> = add your username in the project
+
+git config user.email \<your github email\> = add your email in the project
+
 git init = create git code repository
 
 git status = show repository status
@@ -12,6 +16,8 @@ git add <file, ...files> = add modiefied files to the staging area
 git commit -m "modification description in present tense" = register that file(s) modification in the repository
 
 git log = show commits registers list
+
+git log --oneline = show commits registers but in one line 
 
 git merge \<branch\> = merge the commits from that branch to your working branch now
 
@@ -32,3 +38,5 @@ git reset HEAD = unadd the files that you "add" before
 git reset \<sha1_code\> = rollback your project to that commit sha1 register in specific
 
 git diff \<file\> = show modifications you made in your files comparing to the latest commit
+
+git blame \<file\> = show who edited each line of the file, the commit hash and when (time)
