@@ -33,6 +33,8 @@ git checkout \<branch\> = change your atual branch to the desired branch
 
 git checkout -- <file, ...files> = ignore file(s) modifications and rollback them as it was before
 
+git checkout -b \<branch name\> = creates a new branch from the current branch you were working and goes into it
+
 git reset HEAD = unadd the files that you "add" before
 
 git reset \<sha1_code\> = rollback your project to that commit sha1 register in specific
