@@ -35,6 +35,8 @@ git checkout -- <file, ...files> = ignore file(s) modifications and rollback the
 
 git checkout -b \<branch name\> = creates a new branch from the current branch you were working and goes into it
 
+git checkout -b local_branch_name origin/remote_branch_name = enters a branch that is only available remotely and bring it locally
+
 git reset HEAD = unadd the files that you "add" before
 
 git reset \<sha1_code\> = rollback your project to that commit sha1 register in specific
