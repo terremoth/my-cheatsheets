@@ -72,13 +72,13 @@ INSERT INTO users (name, email, document_number, date_of_birth, bio, salary) VAL
 
 ```
 **Tips**:
-- Today "AUTOINCREMENT" is automatic for "_column_name_ integer primary key", so no need to let it explicit like "id INTEGER PRIMARY KEY AUTOINCREMENT"
-- execute the statement: `PRAGMA table_info(_table_name_);` to get a descriptive structure of the table, very like the `.schema _table_name_` or "DESCRIBE" behavior
-- if you want to simulate "ON UPDATE CURRENT_TIMESTAMP" like other databases, commonly used in "updated_at" field, you can use trigger like:
+- Today `AUTOINCREMENT` is automatic for `column_name integer primary key`, so no need to let it explicit like `id INTEGER PRIMARY KEY AUTOINCREMENT`
+- execute the statement: `PRAGMA table_info(_table_name_);` to get a descriptive structure of the table, very like the `.schema _table_name_` or `DESCRIBE` behavior
+- if you want to simulate `ON UPDATE CURRENT_TIMESTAMP` like other databases, commonly used in `updated_at` field, you can use trigger like:
 ```sql
 CREATE TRIGGER tg_table_name_updated_at 
 AFTER UPDATE 
-ON users FOR EACH ROW 
+ON table_name FOR EACH ROW 
 BEGIN 
   UPDATE table_name SET updated_at = current_timestamp 
     WHERE id = old.id; 
