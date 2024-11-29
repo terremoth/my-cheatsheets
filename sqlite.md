@@ -65,10 +65,11 @@ CREATE TABLE users (
 );
 
 CREATE INDEX document_number_index on users (document_number);
+CREATE UNIQUE INDEX IF NOT EXISTS email_unique ON users(email);
 
 INSERT INTO users (name, email, document_number, date_of_birth, bio, salary) VALUES ('luke', 'luke@luke.com', '11111111111', '1996-12-23', 'web dev', 10000.0);
 INSERT INTO users (name, email, document_number, date_of_birth, bio, salary) VALUES ('john', 'john@john.com', '22222222222', '1985-04-15', 'programmer', 5000.50);
-INSERT INTO users (name, email, document_number, date_of_birth, bio, salary) VALUES ('mary', 'mary@mary.com', '22222222222', '1991-10-03', 'teacher', 8123.45);
+INSERT INTO users (name, email, document_number, date_of_birth, bio, salary) VALUES ('mary', 'mary@mary.com', '33333333333', '1991-10-03', 'teacher', 8123.45);
 
 ```
 **Tips**:
