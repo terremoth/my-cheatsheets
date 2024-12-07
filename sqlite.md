@@ -1,7 +1,7 @@
 # SQLite
 Here I joined all the knowledge I acquired and judged that it is important to know how to use and manipulate SQLite databases.   
 [SQLite](https://www.sqlite.org/) is one of the smallest, easiest to use and greatest relational database in the world in my opinion.  
-For this cheatsheet I am presuming you already downloaded, installed and added the sqlite3 bin to the PATH environment var.
+For this cheatsheet I am presuming you already downloaded, installed and added the sqlite3 bin to the PATH environment var. Usually, your favorite programming languages already have a package or extension you can install and use it without need to download the binaries. 
 
 ## At Command Line:  
 
