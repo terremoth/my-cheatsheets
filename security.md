@@ -8,24 +8,24 @@
 - If available, put a password to access any disk after the BIOS
 - Encrypt your disk to secure all your entire data even if you lost or someone steals, won't be able to know what's inside the disk
 - Add a password to access your desktop area, if possible, use your fingerprint or eyes to unlock
-- If possible pay to a VPN service (like NordVPN or Surfshark)
-- Use Linux or BSD as your main operating system
+- If possible pay to a VPN service (like NordVPN or Surfshark) - mainly if you are addicted to use free WiFis around
+- Use Linux or BSD as your main operating system 
 - Always use a password manager, like Bitwarden (free and open source) to manage your passwords and keys
 - When you have to create a new account, generate a big, random password containing all kind of characters and save it in your password manager
-- Set your default DNS being the CloudFlare ones: 1.1.1.1 and 1.0.0.1 that uses DNS over HTTPS;
-- Use 2FA always as possible, but avoid use SMS and Email as the 2nd factor, try to use a authenticator app you can download everywhere.  
+- Set your default DNS being the CloudFlare ones: 1.1.1.1 and 1.0.0.1 that uses DNS over HTTPS - or any other service with the same purpose;
+- Use 2FA always as possible, but avoid use SMS and Email as the 2nd factor, try to use a authenticator app that you can download and use everywhere.  
   If your email was compromised or you don't have SMS cover area, you won't be able to access your account with 2FA
-- Use Brave Browser, ToR Browser, Otter Browser or GNU Icecat as your default Web Browser because they are privacy/security intended
+- Use Brave Browser, ToR Browser, Otter Browser, Mullvad, LibreWolv, GNU Icecat or any [good private browser you can check here](https://privacytests.org/) as your default Web Browser because they are privacy/security intended
 - Use StartPage and DuckDuckGo as search engine instead of Google, that tracks your data
 - Config your operating system to delete temp data and cache data from time to time
 - If you use Ubuntu Linux, enable Livepatch to fix kernel security issues automatically and without rebooting
-- If you use windows let all your security options setted to High and Windows defender enabled.  
+- If you use Windows let all your security options setted to High and Windows defender enabled.  
   If you're on Linux, download and use rkhunter and chkrootkit with crontab to periodically check for malware. You can also use ClamAV as antivirus.
 - Make periodic encrypted backups/snapshots (timeshift on Linux for eg.) of your important data and send to a cloud backup service like Backblaze and also to a physical disk you own away from the internet 
-- Use WOT (web of trust) and adblocker extensions in your web browser
+- Use WOT (web of trust) and adblocker (or any adblock) extensions in your web browser
 - For linux users: use btrfs as default filesystem if you don't want to use LVM encrypted, so you can easily and quickly rollback backup snapshots.
 - Always maintain your operating system updated so any security flaw can be fixed as soon as identified and patched
-- If you're on Linux, never set a NOPASSWD in the sudoers file for root or you
+- If you're on Linux, never set a NOPASSWD in the sudoers file for root or your user
 - Install [Cerberus App](https://www.cerberusapp.com/) in your phone, so if someone steals, you can remotely delete all the data and let your cellphone unusable.
 - If you don't want to use adblock or vpn blocker, consider using a [custom hosts file updated](https://github.com/StevenBlack/hosts) that cut off all the ads, malwares and trackers
 - There is also another option to avoid ads, malwares and trackers that is the best option in my opinion: buy a raspberry pi zero, set up and use a PI-Hole on it,  
@@ -42,10 +42,10 @@
 ## Behavioural Security
 
 - Never buy in websites that don't have HTTPS in their URL's
-- Never click links in your emails unless you can see the true URL and know the sender. If in doubt, copy the text URL and put yourself in the web browser
+- Never click links in your emails unless you can see the true URL and know the sender.
 - Prefer buy things using the store apps instead of the web
 - Prefer to use apps that don't have ads, so they can't track you (what/when/how you're using your stuff)
-- Always have in mind that are bad people always trying to hack you all the time, so never give them any chance to do this
+- Always have in mind that there are bad people always trying to hack you all the time, so never give them any chance to do this
 - Never connect to password-unprotected WiFi because your data can be tracked and be seen. It is common to see WiFi public and open in hotels, airports and coffee shops
 - Do not open files people send you in emails unless you are 100% sure that doesn't contain any malware. If in doube, ask your antivires or online antivirus services to scan before open
 
